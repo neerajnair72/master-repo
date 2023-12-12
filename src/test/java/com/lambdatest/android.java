@@ -31,7 +31,7 @@ public class android {
         capabilities.setCapability("platformName", "android");
         capabilities.setCapability("deviceName", "Galaxy. *,OnePlus. *,Pixel. *"); //Enter the name of the device here
         capabilities.setCapability("isRealMobile", true);
-        capabilities.setCapability("dedicatedProxy", true);
+        //capabilities.setCapability("dedicatedProxy", true);
         // capabilities.setCapability("platformVersion","11");
         capabilities.setCapability("app","lt://APP1016035381697113789364258"); //Enter the App ID here
         capabilities.setCapability("deviceOrientation", "portrait");
