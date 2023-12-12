@@ -17,3 +17,5 @@ testRunnerCommand: mvn test -P $test
 
 framework:
   name: appium
+
+jobLabel: [appium-testng, android, nativeapp]
