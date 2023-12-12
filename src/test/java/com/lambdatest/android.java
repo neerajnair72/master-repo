@@ -33,7 +33,7 @@ public class android {
         capabilities.setCapability("isRealMobile", true);
         capabilities.setCapability("dedicatedProxy", true);
         // capabilities.setCapability("platformVersion","11");
-        capabilities.setCapability("app","lt://APP1016045801682688971586425"); //Enter the App ID here
+        capabilities.setCapability("app","lt://APP1016035381697113789364258"); //Enter the App ID here
         capabilities.setCapability("deviceOrientation", "portrait");
         capabilities.setCapability("console",true);
         capabilities.setCapability("network",true);
