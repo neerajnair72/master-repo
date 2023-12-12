@@ -1,0 +1,19 @@
+version: "0.2"
+
+runson: android
+autosplit: true
+
+concurrency: 2
+
+pre:
+  - mvn install
+
+testDiscovery:
+  command: cat androidtests.txt
+  mode: static
+  type: raw
+
+testRunnerCommand: mvn test -P $test
+
+framework:
+  name: appium
