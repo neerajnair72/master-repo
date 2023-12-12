@@ -44,5 +44,22 @@ jobs:
               chmod +x hyperexecute
               ./hyperexecute --user ${{ secrets.USERNAME }} --key ${{ secrets.ACCESSKEY }} --download-artifacts --config android.yaml
               echo "Test completion"
+    
+    # This workflow contains a single job called "build"
+  autoheal:
+    runs-on: ubuntu-latest
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v4
+        with:
+          ref: testng-autoheal-hyperexecute-sample
 
+        #Runs a single command using the runners shell
+      - name: Starting CLI testing
+        shell: bash
+        run: |
+              curl https://downloads.lambdatest.com/hyperexecute/linux/hyperexecute -o hyperexecute
+              chmod +x hyperexecute
+              ./hyperexecute --user ${{ secrets.USERNAME }} --key ${{ secrets.ACCESSKEY }} --download-artifacts --config yaml/win/testng_hyperexecute_autosplit_sample.yaml
+              echo "Test completion"
   
