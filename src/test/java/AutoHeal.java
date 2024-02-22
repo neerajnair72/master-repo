@@ -59,7 +59,7 @@ public class AutoHeal
             Thread.sleep(5000);
     
             WebElement changedom = driver.findElementByXPath("//*[contains(text(), 'Change DOM ID')]");
-            // changedom.click();      //Uncomment this line in the 2nd test run for the autoheal to work. 
+            changedom.click();      //Uncomment this line in the 2nd test run for the autoheal to work. 
     
             WebElement username = driver.findElementById("username");
             username.sendKeys("test@gmail.com");
