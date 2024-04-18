@@ -32,7 +32,7 @@ public class androidWeb {
         capabilities.setCapability("platformName", "android");
         capabilities.setCapability("deviceName", "Galaxy. *,OnePlus. *,Pixel. *"); //Enter the name of the device here
         capabilities.setCapability("isRealMobile", true);
-        capabilities.setCapability("dedicatedProxy", true);
+        //capabilities.setCapability("dedicatedProxy", true);
         capabilities.setCapability("region", "eu");
         // capabilities.setCapability("platformVersion","9");
         capabilities.setCapability("deviceOrientation", "portrait");
